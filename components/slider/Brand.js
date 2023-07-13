@@ -10,7 +10,7 @@ const Brand = () => {
             img: "zhontaisolar-logo.png",
         },
         {
-            img: "parwaz-logo.png",
+            img: "emu_logo.png",
         },
         {
             img: "Kvant_logo.svg",
@@ -68,7 +68,7 @@ const Brand = () => {
             >
                 {data.map((item, i) => (
                     <SwiperSlide className="swiper-slide text-center"  key={i}>
-                        <a href="#"><img src={`assets/imgs/page/about/${item.img}`} alt="Genz" /></a>
+                        <a className='d-flex flex-column align-content-center text-center ' href="#"><img className='text-center'  src={`assets/imgs/page/about/${item.img}`} alt="Genz" /></a>
                     </SwiperSlide>
                 ))}
             </Swiper>

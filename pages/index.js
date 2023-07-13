@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
-
-// import HotTopic from "../components/slider/HotTopic";
-// import Typewriter from "typewriter-effect";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Head>
@@ -19,18 +19,21 @@ export default function Home() {
               <div className="col-xl-12 col-lg-12">
                 <div className="banner mb-5">
                   <div className="row align-items-end">
-                    <div className="col-lg-6 pt-100">
-                      <h3 className="color-gray-50 typewrite color-linear mt-20 mb-20 wow animate__animated animate__fadeInUp">
-                        We offer a wide range of digital solutions to help
-                        businesses of all sizes.
+                    <div className="col-lg-5 pt-100">
+                      <h3
+                        style={{ maxWidth: "400px" }}
+                        className="color-gray-50 typewrite color-linear mt-20 mb-20 wow animate__animated animate__fadeInUp"
+                      >
+                        {t("H_title")}
                       </h3>
                     </div>
-                    <div className="col-lg-6 text-center mb-5">
+                    <div className="col-lg-7 text-center mb-5">
                       <div className="banner-img position-relative wow animate__animated animate__fadeIn">
                         <img
-                          width="200px"
-                          src="assets/imgs/page/home/Soff Study dark logo.png"
+                          width="400px"
+                          src="/assets/imgs/page/about/soffhub-removebg-preview.png"
                           alt="Genz"
+                          className="mb-70"
                         />
                         <div className="pattern-1">
                           <img
@@ -59,19 +62,10 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="row ">
-                    <div className="col-2">
-                      {/* <p className="home-contact-fixed  wow animate__animated animate__fadeInUp  typewrite color-linear">
-                        <Link href="/page-contact"> call</Link>
-                      </p> */}
-                    </div>
-                  </div>
                 </div>
 
                 <div className="row text-center mt-70 mb-50">
                   <div className="col-xl-12 col-lg-6 col-md-6 col-sm-4 col-2">
-                    
-
                     {/* yo'nalishlar */}
                     <div className="text-center  mt-50">
                       <ul className="list-tags-col-5  mb-50 text-center d-flex">
@@ -261,7 +255,9 @@ export default function Home() {
                 </div>
 
                 <div className="row mt-70 mb-50 border-gray-800  ">
-                  <h2 className="typewrite color-linear mb-50">Our Services</h2>
+                  <h2 className="typewrite color-linear mb-50">
+                    {t("I_our_services")}
+                  </h2>
                   <div className="col-lg-6 col-xl-6 col-12">
                     <div
                       className="card-style-2 services-card px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
@@ -269,12 +265,10 @@ export default function Home() {
                     >
                       <div className="service-cart__content">
                         <h3 className="color-white mb-15 d-block">
-                          Frontend Development
+                          {t("I_frontend_development")}
                         </h3>
                         <p className="text-base color-gray-700">
-                          We can build a product from the ground up, or support
-                          an existing solution to understand and work with our
-                          clients' business demands.
+                          {t("I_front_desc")}
                         </p>
                       </div>
                       <div className="ms-1">
@@ -283,16 +277,15 @@ export default function Home() {
                     </div>
 
                     <div
-                      className="card-style-2 px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
+                      className="card-style-2 services-card px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
                       data-wow-delay="0s"
                     >
                       <div className="service-cart__content">
                         <h3 className="color-white mb-15 d-block">
-                          UX / UI Design
+                          {t("I_design")}
                         </h3>
                         <p className="text-base color-gray-700">
-                          Design your product to sell, attract, and to be
-                          easy-to-use
+                         {t("I_design_desc")}
                         </p>
                       </div>
                       <div className="ms-1">
@@ -302,17 +295,15 @@ export default function Home() {
                   </div>
                   <div className="col-lg-6 col-xl-6">
                     <div
-                      className="card-style-2 px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
+                      className="card-style-2 services-card px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
                       data-wow-delay="0s"
                     >
                       <div className="service-cart__content">
                         <h3 className="color-white mb-15 d-block">
-                          Backend Web Development
+                          {t("I_backend")}
                         </h3>
                         <p className="text-base color-gray-700">
-                          Our specialty is to develop gold-standard solutions,
-                          alongside reliable backend and qualitative frontend
-                          basement
+                         {t("I_backend_desc")}
                         </p>
                       </div>
                       <div className="ms-1">
@@ -320,16 +311,15 @@ export default function Home() {
                       </div>
                     </div>
                     <div
-                      className="card-style-2 px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
+                      className="card-style-2 services-card px-3 hover-up hover-neon wow animate__animated animate__fadeInUp"
                       data-wow-delay="0s"
                     >
                       <div className="service-cart__content">
                         <h3 className="color-white mb-15 d-block">
-                          AWS Serverless
+                         {t("I_AWS_serverless")}
                         </h3>
                         <p className="text-base color-gray-700">
-                          Our qualified specialists can create a solid solution
-                          based on your requests
+                          {t("I_AWS_serverless_desc")}
                         </p>
                       </div>
                       <div className="ms-1">
@@ -341,7 +331,7 @@ export default function Home() {
 
                 <div className="row mt-70">
                   <h2 className="color-linear d-inline-block mb-10">
-                    Portfolio
+                    {t("I_portfolio")}
                   </h2>
                   <div className="col-6">
                     <div

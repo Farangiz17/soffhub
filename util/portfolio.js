@@ -92,7 +92,7 @@ const portfolio = [
     img: "soff-study-uz.jpg",
     type: "Website",
     description: "Lorem ipsum dolor",
-    icons: ["next.png", "node-js.png"],
+    icons: ["next.png", "python-icon.png"],
     logo: "Soff Study white logo.png",
     link: "http://soffstudy.uz/",
     img_screen: "soff-study-screen2.jpg",

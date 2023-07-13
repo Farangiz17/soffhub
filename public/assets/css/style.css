@@ -8154,19 +8154,20 @@ iframe.google-map {
   padding: 10px;
   border: 1px solid #b5b4b4;
   width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  /* height: 60px; */
+  border-radius: 15px;
   font-size: 17px;
   transition: all .4s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 1px 3px rgb(91, 238, 130);
 }
 
 .home-contact-fixed:hover {
   background-color: #0BD1D1 !important;
   cursor: pointer;
-  box-shadow: 1px 1px 6px rgb(91, 238, 130);
+  box-shadow: 1px 2px 6px rgb(91, 238, 130);
 }
 
 .services-card {
@@ -8235,5 +8236,27 @@ iframe.google-map {
 .portfolio-card-2{
   height: 500px !important;
 }
+
+/* .swiper-slide .swiper-slide-duplicate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+.language-div:hover .language-item{
+  position: absolute;
+  opacity: 1;
+}
+
+.language-item{
+  position: absolute;
+  opacity: 0;
+}
+
+/* .language-item a{
+  display: inline-block !important;
+} */
 
 /*# sourceMappingURL=style.css.map */

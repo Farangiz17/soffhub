@@ -3,12 +3,14 @@ import Head from "next/head";
 import PortfolioFilter from "../components/elements/PortfolioFilter";
 import Layout from "../components/layout/Layout";
 import Brand from "../components/slider/Brand";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const {t} = useTranslation()
   return (
     <>
       <Head>
-        <title> Soff Hub | Portfolio</title>
+        <title> Soff Hub | {t("N_portfolio")}</title>
       </Head>
       <Layout>
         <div className="cover-home1">
@@ -18,7 +20,7 @@ const Portfolio = () => {
               <div className="col-xl-12 col-lg-12">
                 <div className="text-start mt-70 mb-50">
                   <h3 className="color-linear d-inline-block  animate__animated animate__fadeInUp ">
-                - Projects
+                - {t("A_projects")}
                   </h3>
                 </div>
                 <PortfolioFilter col={6} show={6} />

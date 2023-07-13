@@ -1,0 +1,44 @@
+import React from "react";
+import Head from "next/head";
+import PortfolioFilter from "../components/elements/PortfolioFilter";
+import Layout from "../components/layout/Layout";
+import Brand from "../components/slider/Brand";
+
+const Portfolio = () => {
+  return (
+    <>
+      <Head>
+        <title> Soff Hub | Portfolio</title>
+      </Head>
+      <Layout>
+        <div className="cover-home1">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-1" />
+              <div className="col-xl-12 col-lg-12">
+                <div className="text-start mt-70 mb-50">
+                  <h3 className="color-linear d-inline-block  animate__animated animate__fadeInUp ">
+                - Projects
+                  </h3>
+                </div>
+                <PortfolioFilter col={6} show={6} />
+              
+                <div className="list-logos mt-50 mb-30">
+                  <div className="container">
+                    <div className="row">
+                      <div className="swiper-container swiper-group-1">
+                        <Brand />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Layout>
+    </>
+  );
+};
+
+export default Portfolio;

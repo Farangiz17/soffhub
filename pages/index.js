@@ -70,8 +70,6 @@ export default function Home() {
 
                 <div className="row text-center mt-70 mb-50">
                   <div className="col-xl-12 col-lg-6 col-md-6 col-sm-4 col-2">
-                    
-
                     {/* yo'nalishlar */}
                     <div className="text-center  mt-50">
                       <ul className="list-tags-col-5  mb-50 text-center d-flex">
@@ -343,21 +341,244 @@ export default function Home() {
                   <h2 className="color-linear d-inline-block mb-10">
                     Portfolio
                   </h2>
-                  <div className="col-6">
+                  <div className="row">
+                    <div className="col-lg-7 col-md-12">
+                      <div
+                        className="row-card card-image wow animate__animated animate__fadeIn"
+                        width="100%"
+                      >
+                        <div className="portfolio-image middle">
+                          <Link href="/single-sidebar">
+                            <img
+                              src="assets/imgs/page/about/zhontaisolar.png"
+                              alt="Genz"
+                            />
+                          </Link>
+                          <div className="portfolio-info card-bg-2">
+                            <div className="portfolio-info-bottom">
+                              <h4 className="color-white">zhontaisolar.com</h4>
+                              <p className="text-sm">Website</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-5 col-md-12">
+                      <div
+                        className="row-card card-image wow animate__animated animate__fadeIn"
+                        width="100%"
+                      >
+                        <div className="portfolio-image">
+                          <Link href="/single-sidebar">
+                            <img
+                              src="assets/imgs/page/portfolio/kvant.jpg"
+                              alt="Genz"
+                            />
+                          </Link>
+                          <div className="portfolio-info card-bg-2">
+                            <div className="portfolio-info-bottom">
+                              <h4 className="color-white">Kvant.uz</h4>
+                              <p className="text-sm">Online Store</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="row-card card-image wow animate__animated animate__fadeIn"
+                        width="100%"
+                      >
+                        <div className="portfolio-image">
+                          <Link href="/single-sidebar">
+                            <img
+                              src="assets/imgs/page/about/boomirang.png"
+                              alt="Genz"
+                            />
+                          </Link>
+                          <div className="portfolio-info card-bg-2">
+                            <div className="portfolio-info-bottom">
+                              <h4 className="color-white">Boomirang</h4>
+                              <p className="text-sm">Website</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-8 col-md-12">
+                      <div className="row-card">
+                        <div className="col-6">
+                          <div
+                            className="card-image wow animate__animated animate__fadeIn"
+                            width="100%"
+                          >
+                            <div className="portfolio-image middle" >
+                              <Link href="/single-sidebar">
+                                <img
+                                  src="assets/imgs/page/about/soff-parwaz-group-com.png"
+                                  alt="Genz"
+                                />
+                              </Link>
+                              <div className="portfolio-info card-bg-2">
+                                <div className="portfolio-info-bottom">
+                                  <h4 className="color-white">Parwaz-group.com</h4>
+                                  <p className="text-sm">Online Store</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-6">
+                          <div className="row-card">
+                            <div
+                              className="card-image wow animate__animated animate__fadeIn"
+                              width="100%"
+                            >
+                              <div className="portfolio-image">
+                                <Link href="/single-sidebar">
+                                  <img
+                                    src="assets/imgs/page/portfolio/soff-study-uz.jpg"
+                                    alt="Genz"
+                                  />
+                                </Link>
+                                <div className="portfolio-info card-bg-2">
+                                  <div className="portfolio-info-bottom">
+                                    <h4 className="color-white">Soff Study</h4>
+                                    <p className="text-sm">Online Store</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="row-card">
+                            <div
+                              className="card-image wow animate__animated animate__fadeIn"
+                              width="100%"
+                            >
+                              <div className="portfolio-image small-img">
+                                <Link href="/single-sidebar">
+                                  <img
+                                    src="assets/imgs/page/about/all-data.jpg"
+                                    alt="Genz"
+                                  />
+                                </Link>
+                                <div className="portfolio-info card-bg-2">
+                                  <div className="portfolio-info-bottom">
+                                    <h4 className="color-white">All data</h4>
+                                    <p className="text-sm">Online Store</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-12">
+                      <div
+                        className="row-card card-image wow animate__animated animate__fadeIn"
+                        width="100%"
+                      >
+                        <div className="portfolio-image middle">
+                          <Link href="/single-sidebar">
+                            <img
+                              src="assets/imgs/page/about/emuni.png"
+                              alt="Genz"
+                            />
+                          </Link>
+                          <div className="portfolio-info card-bg-2">
+                            <div className="portfolio-info-bottom">
+                              <h4 className="color-white">Emuni.uz</h4>
+                              <p className="text-sm">Website</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="col-lg-4 col-md-12">
                     <div
-                      className="card-list-posts wow animate__animated animate__fadeIn"
+                      className="row-card card-image wow animate__animated animate__fadeIn"
                       width="100%"
                     >
-                      <div className="card-image hover-up">
+                      <div className="portfolio-image">
+                        <Link href="/single-sidebar">
+                          <img
+                            src="assets/imgs/page/about/soff-study-uz.jpg"
+                            alt="Genz"
+                          />
+                        </Link>
+                        <div className="portfolio-info card-bg-2">
+                          <div className="portfolio-info-bottom">
+                            <h4 className="color-white">zhontaisolar.com</h4>
+                            <p className="text-sm">Website</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="row-card card-image wow animate__animated animate__fadeIn"
+                      width="100%"
+                    >
+                      <div className="portfolio-image">
+                        <Link href="/single-sidebar">
+                          <img
+                            src="assets/imgs/page/about/soff-parwaz-group-com.png"
+                            alt="Genz"
+                          />
+                        </Link>
+                        <div className="portfolio-info card-bg-2">
+                          <div className="portfolio-info-bottom">
+                            <h4 className="color-white">Kvant.uz</h4>
+                            <p className="text-sm">Online Store</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
+                  {/* <div className="col-6">
+                    <div
+                      className="card-list-posts card-image wow animate__animated animate__fadeIn"
+                      width="100%"
+                    >
+                      <div className="portfolio-image">
+                        <Link href="/single-sidebar">
+                          <img
+                            src="assets/imgs/page/portfolio/soff-parwaz-group-com.png"
+                            alt="Genz"
+                          />
+                        </Link>
+                        <div className="portfolio-info card-bg-2">
+                          <div className="portfolio-info-bottom">
+                            <h4 className="color-white">Kvant.uz</h4>
+                            <p className="text-sm">Online Store</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div
+                      className="card-list-posts card-image wow animate__animated animate__fadeIn"
+                      width="100%"
+                    >
+                      <div className="portfolio-image">
                         <Link href="/single-sidebar">
                           <img
                             src="assets/imgs/page/portfolio/kvant.jpg"
                             alt="Genz"
                           />
                         </Link>
+                        <div className="portfolio-info card-bg-2">
+                          <div className="portfolio-info-bottom">
+                            <h4 className="color-white">Kvant.uz</h4>
+                            <p className="text-sm">Online Store</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <div className="col-3">
                     <div className="card-list-posts wow animate__animated animate__fadeIn">
                       <div className="card-image hover-up">

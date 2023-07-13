@@ -42,7 +42,9 @@ export default function Home() {
                             </p>
                           </div>
                           <div className="ms-1">
-                            <span className="item-icon bg-gray-950 icon-branding" />
+                            <div className="item-icon bg-gray-950 " >
+                            <i class={`${item.iconClass}`}></i>
+                            </div>
                           </div>
                         </div>
                       </div>

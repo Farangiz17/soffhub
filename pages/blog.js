@@ -2,8 +2,10 @@ import Link from "next/link";
 import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import data from "../util/healthy";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+    const {t} = useTranslation()
     return (
         <>
             <Head>
@@ -18,7 +20,7 @@ export default function Home() {
                                 <div className="row align-items-end mt-50">
                                     <div className="col-lg-12 text-center">
                                         <div className="d-inline-block position-relative">
-                                            <h1 className="color-white mb-10 color-linear wow animate__animated animate__fadeIn">We Blog</h1>
+                                            <h1 className="color-white mb-10 color-linear wow animate__animated animate__fadeIn">{t("B_title")}</h1>
                                         </div>
                                         {/* <p className="color-gray-500 text-base mb-20 wow animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis nisi sed turpis<br className="d-none d-lg-block" />vulputate viverra. Morbi ligula elit, hendrerit non nisl tincidunt, sodales consequat magna.</p> */}
                                     </div>

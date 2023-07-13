@@ -43,12 +43,12 @@ const PortfolioCarousel = () => {
     return (
         <>
             <Swiper
-                slidesPerView={4}
+                slidesPerView={3}
                 spaceBetween={10}
                 loop={true}
                 autoplay={{
                     delay: 2500,
-                    disableOnInteraction: false
+                    disableOnInteraction: true
                 }}
                 navigation={{
                     prevEl: ".swiper-button-prev-style-3",

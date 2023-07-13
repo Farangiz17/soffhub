@@ -1,28 +1,28 @@
 import Link from "next/link";
-import Head from 'next/head';
+import Head from "next/head";
 import Accordion from "../components/elements/Accordion";
 import PortfolioFilter from "../components/elements/PortfolioFilter";
 import Layout from "../components/layout/Layout";
 import Brand from "../components/slider/Brand";
 import Testimonial from "../components/slider/Testimonial";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
-    return (
-        <>
-            <Head>
-                <title>
-                    Soff Hub | About
-                </title>
-            </Head>
-            <Layout>
-                <div className="cover-home1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-1" />
-                            <div className="col-xl-12 col-lg-12">
-                                <div className="banner">
-                                    {/* <div className="row align-items-end">
+  const { t } = useTranslation();
+  return (
+    <>
+      <Head>
+        <title>Soff Hub | {t("N_about")}</title>
+      </Head>
+      <Layout>
+        <div className="cover-home1">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-1" />
+              <div className="col-xl-12 col-lg-12">
+                <div className="banner">
+                  {/* <div className="row align-items-end">
                                         <div className="col-lg-6 pt-100"><span className="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">Hello Everyone!</span>
                                             <h1 className="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">I’m
                                                 <Typewriter
@@ -57,14 +57,12 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div> */}
-                                    
-                                    <h6 className="color-white text-center d-inline-block mb-20 wow animate__animated animate__fadeInUp">
-                                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"Нет никого, кто любил бы боль саму по себе, кто искал бы её и кто хотел бы иметь её просто потому, что это боль.."
 
-                                    </h6>
-                                </div>
-                                {/* <div className="box-features bg-gray-850 border-gray-800">
+                  <h6 className="color-white text-center d-inline-block mb-20 wow animate__animated animate__fadeInUp">
+                    {t("A_desc")}
+                  </h6>
+                </div>
+                {/* <div className="box-features bg-gray-850 border-gray-800">
                                     <div className="row">
                                         <div className="col-lg-4 col-md-6 mb-50 wow animate__animated animate__fadeIn" data-wow-delay="0s"><span className="item-icon bg-gray-950 icon-motion" />
                                             <h5 className="color-white mb-15">Motion &amp;<br />Web Graphy</h5>
@@ -92,16 +90,16 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div> */}
-                                <div className="text-center mt-70 mb-50">
-                                    <h3 className="color-linear d-inline-block mb-20 wow animate__animated animate__fadeInUp">My Latest Projects</h3>
-                                    {/* <p className="text-lg color-gray-500 wow animate__animated animate__fadeInUp">The convention is the main event of the year for professionals in<br className="d-none d-lg-block" />the world of design and architecture.</p> */}
-                                </div>
+                <div className="text-center mt-70 ">
+                  <h3 className="color-linear d-inline-block wow animate__animated animate__fadeInUp">
+                    {t("A_projects")}
+                  </h3>
+                  {/* <p className="text-lg color-gray-500 wow animate__animated animate__fadeInUp">The convention is the main event of the year for professionals in<br className="d-none d-lg-block" />the world of design and architecture.</p> */}
+                </div>
 
+                <PortfolioFilter col={4} />
 
-                                <PortfolioFilter col={4} />
-
-
-                                {/* <div className="text-center mt-30 mb-50">
+                {/* <div className="text-center mt-30 mb-50">
                                     <h2 className="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">
                                         The best work solution,<br />for the best price.</h2>
                                 </div>
@@ -172,7 +170,7 @@ export default function Home() {
                                 <div className="text-center mt-30">
                                     <h2 className="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">FAQs</h2>
                                 </div> */}
-                                {/* <div className="box-faqs mb-70">
+                {/* <div className="box-faqs mb-70">
                                     <Accordion />
                                 </div>
                                 <div className="text-center mt-70 mb-50">
@@ -184,29 +182,31 @@ export default function Home() {
                                         <Testimonial />
                                     </div>
                                 </div> */}
-                                <div className="row align-items-end mt-30">
-                                    <div className="col-lg-9 wow animate__animated animate__fadeIn">
-                                        <h3 className="color-linear">We Partners</h3>
-                                    </div>
-                                    <div className="col-lg-3 text-lg-end mt-15 hover-up wow animate__animated animate__fadeIn" data-wow-delay="0.2s"></div>
-                                </div>
-                                <div className="list-logos mt-50 mb-30">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="swiper-container swiper-group-1">
-                                                <div className="swiper-wrapper wow animate__animated animate__fadeIn">
-                                                    <Brand />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="row align-items-end mt-30">
+                  <div className="col-lg-9 wow animate__animated animate__fadeIn">
+                    <h3 className="color-linear">{t("A_partners")}</h3>
+                  </div>
+                  <div
+                    className="col-lg-3 text-lg-end mt-15 hover-up wow animate__animated animate__fadeIn"
+                    data-wow-delay="0.2s"
+                  ></div>
                 </div>
-
-            </Layout>
-        </>
-    )
+                <div className="list-logos mt-50 mb-30">
+                  <div className="container">
+                    <div className="row">
+                      <div className="swiper-container swiper-group-1">
+                        <div className="swiper-wrapper wow animate__animated animate__fadeIn">
+                          <Brand />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Layout>
+    </>
+  );
 }

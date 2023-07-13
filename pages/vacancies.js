@@ -2,12 +2,16 @@ import Link from "next/link";
 import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Brand from "../components/slider/Brand";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+
+    const {t} = useTranslation()
+
     return (
         <>
             <Head>
-                <title>Soff Hub | Vacancies</title>
+                <title>Soff Hub | {t("N_vacancies")}</title>
             </Head>
             <Layout>
                 <div className="banner banner-home4 bg-gray-850 mb-70">
@@ -18,8 +22,8 @@ export default function Home() {
                                 <div className="pt-20">
                                     <div className="box-banner-4">
                                         {/* <div className="banner-image"><img src="assets/imgs/page/homepage4/banner.png" alt="Genz" /></div> */}
-                                        <div className="banner-info"><span className="text-sm-bold color-gray-600">Hello Everyone!</span>
-                                            <h3 className="color-linear d-block mt-10 mb-15">We have no vacancies at the moment</h3>
+                                        <div className="banner-info"><span className="text-sm-bold color-gray-600">{t("V_Hello_Everyone")}</span>
+                                            <h3 className="color-linear d-block mt-10 mb-15">{t("V_no")}</h3>
                                             <div className="box-socials"><Link className="bg-gray-800 hover-up" href="#"><span className="fb" /></Link><Link className="bg-gray-800 hover-up" href="#"><span className="inst" /></Link><Link className="bg-gray-800 hover-up" href="#"><span className="snap" /></Link><Link className="bg-gray-800 hover-up" href="#"><span className="tw" /></Link></div>
                                         </div>
                                     </div>
